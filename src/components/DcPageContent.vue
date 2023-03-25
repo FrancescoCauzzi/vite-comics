@@ -8,7 +8,7 @@ export default {
 };
 </script>
 <template>
-  <div class="container __page-ctn">
+  <div class="container __page-ctn px-5">
     <p>{{ message }}</p>
   </div>
 </template>
