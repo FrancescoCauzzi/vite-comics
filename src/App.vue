@@ -2,6 +2,7 @@
 import NavbarCustom from "./components/NavbarCustom.vue";
 import PageContent from "./components/PageContent.vue";
 import DcFeatures from "./components/DcFeatures.vue";
+import DcFooter from "./components/DcFooter.vue";
 </script>
 
 <template>
@@ -19,7 +20,16 @@ import DcFeatures from "./components/DcFeatures.vue";
       <DcFeatures />
     </div>
   </main>
-  <footer></footer>
+  <footer>
+    <div class="container-fluid __footer position-relative">
+      <DcFooter />
+      <img
+        id="dc-logo-bg"
+        src="/img/dc-logo-bg.png"
+        alt="Cannot retrieve image"
+      />
+    </div>
+  </footer>
 </template>
 
 <style scoped>
@@ -29,5 +39,18 @@ import DcFeatures from "./components/DcFeatures.vue";
 
 .__features {
   background-color: #0282f9;
+}
+
+.__footer {
+  background-image: url(/img/footer-bg.jpg);
+
+  overflow: hidden;
+}
+
+#dc-logo-bg {
+  position: absolute;
+  right: 10%;
+  bottom: -25%;
+  z-index: 0;
 }
 </style>

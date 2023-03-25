@@ -46,8 +46,8 @@ export default {
 /* .__features-ctn {
 } */
 img {
-  height: 100%;
-  width: 25%;
+  height: 80px;
+  width: 70px;
 }
 
 .__name {
