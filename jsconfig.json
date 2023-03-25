@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "jsx": "react"
+  },
+  "include": ["./src/**/*"],
+  "exclude": ["**/*.test.ts", "**/*.spec.ts"],
+  "baseUrl": "./src",
+  "paths": {
+    "@/*": ["*"]
+  },
+  "recommendations": ["Vue.volar", "Vue.vscode-typescript-vue-plugin"]
+}

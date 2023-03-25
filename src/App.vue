@@ -1,18 +1,25 @@
 <script setup>
-  import NavbarCustom from "./components/NavbarCustom.vue";
+import NavbarCustom from "./components/NavbarCustom.vue";
+import PageContent from "./components/PageContent.vue";
 </script>
 
 <template>
-  <div class="container-fluid">
-    <div class="container">
-      <header>
-        <NavbarCustom />
-      </header>
-
-      <main></main>
-      <footer></footer>
+  <header>
+    <div class="container-fluid">
+      <NavbarCustom />
     </div>
-  </div>
+  </header>
+
+  <main>
+    <div class="container-fluid __page-ctn">
+      <PageContent />
+    </div>
+  </main>
+  <footer></footer>
 </template>
 
-<style scoped></style>
+<style scoped>
+.__page-ctn {
+  background-color: #1c1c1c;
+}
+</style>
