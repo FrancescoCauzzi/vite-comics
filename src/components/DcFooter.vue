@@ -53,7 +53,7 @@ export default {
 </script>
 <template>
   <div class="container __footer-cnt">
-    <div class="row row-cols-3 py-3 w-50">
+    <div class="row row-cols-3 py-4 w-50">
       <div
         v-for="(item, index) in footerItems"
         :key="index"

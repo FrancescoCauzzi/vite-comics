@@ -14,7 +14,7 @@ export default {
 </template>
 <style scoped>
 .__page-ctn {
-  padding: 30px 0 30px 0;
+  padding: 40px 0 40px 0;
   text-align: start;
   color: white;
   font-size: 1.3em;

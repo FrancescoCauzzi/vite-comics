@@ -29,7 +29,7 @@ export default {
 };
 </script>
 <template>
-  <div class="container p-5">
+  <div class="container p-4">
     <div class="row row-cols-5 __features-ctn text-white">
       <div
         v-for="(item, index) in features"
@@ -43,18 +43,16 @@ export default {
   </div>
 </template>
 <style scoped>
-/* .__features-ctn {
-} */
 img {
-  height: 80px;
-  width: 70px;
+  object-fit: contain;
+  height: 50%;
+  width: 50%;
 }
 
 .__name {
   font-size: 0.8em;
 }
 .__col {
-  height: 70px;
   cursor: pointer;
 }
 </style>

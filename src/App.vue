@@ -1,20 +1,21 @@
 <script setup>
-import NavbarCustom from "./components/NavbarCustom.vue";
-import PageContent from "./components/PageContent.vue";
+import DcNavbarCustom from "./components/DcNavbarCustom.vue";
+import DcPageContent from "./components/DcPageContent.vue";
 import DcFeatures from "./components/DcFeatures.vue";
 import DcFooter from "./components/DcFooter.vue";
+import DcNavbarBottom from "./components/DcNavbarBottom.vue";
 </script>
 
 <template>
   <header>
     <div class="container-fluid">
-      <NavbarCustom />
+      <DcNavbarCustom />
     </div>
   </header>
 
   <main>
     <div class="container-fluid __page-ctn">
-      <PageContent />
+      <DcPageContent />
     </div>
     <div class="container-fluid __features">
       <DcFeatures />
@@ -28,6 +29,9 @@ import DcFooter from "./components/DcFooter.vue";
         src="/img/dc-logo-bg.png"
         alt="Cannot retrieve image"
       />
+    </div>
+    <div class="container-fluid __navbar-bottom">
+      <DcNavbarBottom />
     </div>
   </footer>
 </template>
@@ -52,5 +56,9 @@ import DcFooter from "./components/DcFooter.vue";
   right: 10%;
   bottom: -25%;
   z-index: 0;
+}
+
+.__navbar-bottom {
+  background-color: #303030;
 }
 </style>
