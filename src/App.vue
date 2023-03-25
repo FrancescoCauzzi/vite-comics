@@ -1,6 +1,7 @@
 <script setup>
 import NavbarCustom from "./components/NavbarCustom.vue";
 import PageContent from "./components/PageContent.vue";
+import DcFeatures from "./components/DcFeatures.vue";
 </script>
 
 <template>
@@ -14,6 +15,9 @@ import PageContent from "./components/PageContent.vue";
     <div class="container-fluid __page-ctn">
       <PageContent />
     </div>
+    <div class="container-fluid __features">
+      <DcFeatures />
+    </div>
   </main>
   <footer></footer>
 </template>
@@ -21,5 +25,9 @@ import PageContent from "./components/PageContent.vue";
 <style scoped>
 .__page-ctn {
   background-color: #1c1c1c;
+}
+
+.__features {
+  background-color: #0282f9;
 }
 </style>

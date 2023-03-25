@@ -12,7 +12,7 @@ export default {
     <p>{{ message }}</p>
   </div>
 </template>
-<style>
+<style scoped>
 .__page-ctn {
   padding: 30px 0 30px 0;
   text-align: start;
