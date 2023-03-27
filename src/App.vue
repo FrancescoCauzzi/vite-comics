@@ -1,7 +1,7 @@
 <script>
 // Object API, be careful not to confuse this syntax with the one of the 'Composition API'
 import DcNavbarCustom from "./components/DcNavbarCustom.vue";
-import DcPageContent from "./components/DcPageContent.vue";
+import DcPageContent from "./components/DcPageContentFolder/DcPageContent.vue";
 import DcFeatures from "./components/DcFeatures.vue";
 import DcFooter from "./components/DcFooter.vue";
 import DcNavbarBottom from "./components/DcNavbarBottom.vue";
@@ -27,7 +27,7 @@ export default {
   </header>
 
   <main>
-    <div class="container-fluid __page-ctn">
+    <div>
       <DcPageContent />
     </div>
     <div class="container-fluid __features">
@@ -49,9 +49,6 @@ export default {
   background-image: url(/img/footer-bg.jpg);
 
   overflow: hidden;
-}
-.__page-ctn {
-  background-color: #1c1c1c;
 }
 
 .__features {
