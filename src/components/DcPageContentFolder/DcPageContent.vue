@@ -18,12 +18,16 @@ export default {
     <div class="container-fluid __bg-image">
       <div class="container">
         <div class="__current-series">
-          <span>CURRENT SERIES ER</span>
+          <span>CURRENT SERIES</span>
         </div>
       </div>
     </div>
-    <div class="container py-5">
-      <DcPageContentCard></DcPageContentCard>
+    <div class="container py-5 __cards-container">
+      <DcPageContentCard
+        v-for="item in cards"
+        :image="item.thumb"
+        :genre="item.type"
+      ></DcPageContentCard>
     </div>
     <div class="__btn-container text-center">
       <button id="load-more-btn">LOAD MORE</button>
@@ -34,8 +38,8 @@ export default {
 .__page-ctn {
   /* text-align: start; */
   color: white;
-  font-size: 1.3em;
-  font-weight: bold;
+  /* font-size: 1.3em;
+  font-weight: bold; */
   padding: 0px 0px 20px 0px;
 
   background-color: #1c1c1c;
@@ -49,11 +53,18 @@ export default {
   position: relative;
 }
 .__current-series {
+  font-size: 1.3em;
+  font-weight: bold;
   position: absolute;
   bottom: -5%;
-
   padding: 5px 20px 5px 20px;
   background-color: #0282f9;
+}
+
+.__cards-container {
+  gap: 10px;
+  flex-flow: row wrap;
+  display: flex;
 }
 
 #load-more-btn {

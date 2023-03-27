@@ -1,12 +1,42 @@
 <script>
 export default {
   data() {
-    return {};
+    return {
+      name: "DCPageContentCard",
+    };
   },
-  props: {},
+  props: {
+    image: String,
+    genre: String,
+  },
 };
 </script>
 <template>
-  <div></div>
+  <div class="__card">
+    <div class="__img-card-container">
+      <img :src="image" alt="Cannot Retrieve Image" />
+    </div>
+    <!-- le prop vengono interpolate e chiamate come delle semplici proprietà in data() -->
+    <div class="__genre">{{ genre.toUpperCase() }}</div>
+  </div>
 </template>
-<style></style>
+<style scoped>
+.__card {
+  width: calc(100% / 6 * 1 - (10px / 6 * 5));
+
+  min-width: 130px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.__img-card-container {
+  background-color: red;
+  height: 180px;
+  overflow: hidden;
+
+  margin-bottom: 10px;
+}
+</style>
