@@ -1,9 +1,11 @@
 <script>
 import DcPageContentCard from "./DcPageContentCard.vue";
+import data from "../../../public/dc-comics.json";
+console.log(data);
 export default {
   data() {
     return {
-      series: [],
+      cards: data,
     };
   },
   components: {
@@ -20,9 +22,11 @@ export default {
         </div>
       </div>
     </div>
-    <div class="container py-5 text-start">
-      <DcPageContentCard />
-      TESTO PROVA
+    <div class="container py-5">
+      <DcPageContentCard></DcPageContentCard>
+    </div>
+    <div class="__btn-container text-center">
+      <button id="load-more-btn">LOAD MORE</button>
     </div>
   </div>
 </template>
@@ -32,8 +36,7 @@ export default {
   color: white;
   font-size: 1.3em;
   font-weight: bold;
-  padding-left: 0;
-  padding-right: 0;
+  padding: 0px 0px 20px 0px;
 
   background-color: #1c1c1c;
 }
@@ -49,7 +52,13 @@ export default {
   position: absolute;
   bottom: -5%;
 
-  padding: 5px 15px 5px 15px;
+  padding: 5px 20px 5px 20px;
   background-color: #0282f9;
+}
+
+#load-more-btn {
+  padding: 5px 40px 5px 40px;
+  background-color: #0282f9;
+  font-weight: bold;
 }
 </style>
