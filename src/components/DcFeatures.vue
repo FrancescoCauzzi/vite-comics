@@ -29,7 +29,7 @@ export default {
 };
 </script>
 <template>
-  <div class="container p-4">
+  <div class="container py-5">
     <div class="row row-cols-5 __features-ctn text-white">
       <div
         v-for="(item, index) in features"
@@ -45,8 +45,8 @@ export default {
 <style scoped>
 img {
   object-fit: contain;
-  height: 50%;
-  width: 50%;
+  height: 3.5em;
+  /* width: 50%; */
 }
 
 .__name {

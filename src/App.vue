@@ -1,9 +1,22 @@
-<script setup>
+<script>
+// Object API, be careful not to confuse this syntax with the one of the 'Composition API'
 import DcNavbarCustom from "./components/DcNavbarCustom.vue";
 import DcPageContent from "./components/DcPageContent.vue";
 import DcFeatures from "./components/DcFeatures.vue";
 import DcFooter from "./components/DcFooter.vue";
 import DcNavbarBottom from "./components/DcNavbarBottom.vue";
+export default {
+  data() {
+    return {};
+  },
+  components: {
+    DcNavbarCustom,
+    DcPageContent,
+    DcFeatures,
+    DcFooter,
+    DcNavbarBottom,
+  },
+};
 </script>
 
 <template>
@@ -24,11 +37,6 @@ import DcNavbarBottom from "./components/DcNavbarBottom.vue";
   <footer>
     <div class="container-fluid __footer position-relative">
       <DcFooter />
-      <img
-        id="dc-logo-bg"
-        src="/img/dc-logo-bg.png"
-        alt="Cannot retrieve image"
-      />
     </div>
     <div class="container-fluid __navbar-bottom">
       <DcNavbarBottom />
@@ -37,25 +45,17 @@ import DcNavbarBottom from "./components/DcNavbarBottom.vue";
 </template>
 
 <style scoped>
+.__footer {
+  background-image: url(/img/footer-bg.jpg);
+
+  overflow: hidden;
+}
 .__page-ctn {
   background-color: #1c1c1c;
 }
 
 .__features {
   background-color: #0282f9;
-}
-
-.__footer {
-  background-image: url(/img/footer-bg.jpg);
-
-  overflow: hidden;
-}
-
-#dc-logo-bg {
-  position: absolute;
-  right: 10%;
-  bottom: -25%;
-  z-index: 0;
 }
 
 .__navbar-bottom {

@@ -18,7 +18,7 @@ export default {
 </script>
 <template>
   <div class="container d-flex justify-content-between">
-    <div class="__left d-flex p-3">
+    <div class="__left d-flex py-3">
       <button class="p-2">{{ btnText.toUpperCase() }}</button>
     </div>
     <div class="__right d-flex justify-content-end p-3">

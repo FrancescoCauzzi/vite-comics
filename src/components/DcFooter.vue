@@ -52,13 +52,9 @@ export default {
 };
 </script>
 <template>
-  <div class="container __footer-cnt">
-    <div class="row row-cols-3 py-4 w-50">
-      <div
-        v-for="(item, index) in footerItems"
-        :key="index"
-        class="col __links"
-      >
+  <div class="container">
+    <div class="row row-cols-3 py-4 w-50 __links">
+      <div v-for="(item, index) in footerItems" :key="index" class="col">
         <ul :class="`__${item.title.replace(/\s+/g, '')}`">
           <h5 class="text-white mb-2">{{ item.title.toUpperCase() }}</h5>
           <li
@@ -71,13 +67,26 @@ export default {
         </ul>
       </div>
     </div>
+    <img
+      id="dc-logo-bg"
+      src="/img/dc-logo-bg.png"
+      alt="Cannot retrieve image"
+    />
   </div>
 </template>
 <style scoped>
+.__links {
+  position: relative;
+  z-index: 2;
+}
 a {
   text-decoration: none;
   cursor: pointer;
   color: #898989;
+}
+
+ul {
+  padding-left: 0;
 }
 
 .__link {
@@ -86,5 +95,12 @@ a {
 
 .__shop {
   margin-top: -80px;
+}
+
+#dc-logo-bg {
+  position: absolute;
+  right: 10%;
+  bottom: -25%;
+  z-index: 0;
 }
 </style>

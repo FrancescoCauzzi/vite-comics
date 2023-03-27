@@ -21,7 +21,7 @@ export default {
 
 <template>
   <div class="__nav-bar-cnt d-flex align-items-center container">
-    <div class="__logo-wrapper w-25 p-3">
+    <div class="__logo-wrapper w-25 py-3">
       <img src="/img/dc-logo.png" alt="cannot-render-image" srcset="" />
     </div>
     <div class="__links-wrapper w-75">
