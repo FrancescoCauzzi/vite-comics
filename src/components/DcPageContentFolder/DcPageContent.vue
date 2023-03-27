@@ -18,7 +18,7 @@ export default {
     <div class="container-fluid __bg-image">
       <div class="container">
         <div class="__current-series">
-          <span>CURRENT SERIES</span>
+          <span>CURRENT SERIES ER</span>
         </div>
       </div>
     </div>
