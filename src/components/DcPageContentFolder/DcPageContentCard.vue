@@ -29,12 +29,14 @@ export default {
 
 img {
   width: 100%;
-  height: 100%;
+  aspect-ratio: 1 / 1;
+  /* height: 100%; */
   object-fit: cover;
+  object-position: top;
 }
 .__img-card-container {
-  background-color: red;
-  height: 180px;
+  /* background-color: red; */
+  /* height: 180px; */
   overflow: hidden;
 
   margin-bottom: 10px;
